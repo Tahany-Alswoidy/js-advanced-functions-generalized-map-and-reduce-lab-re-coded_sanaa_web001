@@ -3,5 +3,5 @@ function map(sourceArray,myfunction){
   return sourceArray.map(a=>myfunction(a));
 }
 function reduce(sourceArray,myfunction){
-  return sourceArray.reduce(myfunction(a,memo));
+  return sourceArray.reduce(a=>myfunction(a,memo));
 }
