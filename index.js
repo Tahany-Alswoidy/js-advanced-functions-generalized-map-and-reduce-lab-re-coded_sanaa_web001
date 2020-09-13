@@ -2,7 +2,7 @@
 function map(sourceArray,myfunction){
   return sourceArray.map(a=>myfunction(a));
 }
-function reduce(sourceArray,total,totalwithstart,alltrue,anytrue,starting){
-  if(starting){return }
-  return sourceArray.reduce(a=>myfunction(a,memo));
+function reduce(sourceArray,myfunction,starting){
+  if(starting){return sourceArray.reduce(myfunction,starting)}
+  else if(!starting){return sourceArray.reduce(myfunction)}
 }
