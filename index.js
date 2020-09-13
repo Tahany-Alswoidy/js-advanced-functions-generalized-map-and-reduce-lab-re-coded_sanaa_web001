@@ -1,4 +1,4 @@
 // Add your functions here
-functions map(sourceArray,function(a){ret}){
-  return sourceArray.map()
+functions map(sourceArray,myfunction){
+  return sourceArray.map(a=>myfunction(a););
 }
